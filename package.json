@@ -1,0 +1,29 @@
+{
+  "name": "shopify_mern",
+  "version": "1.0.0",
+  "description": "Shopping list implemented in MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "node",
+    "express",
+    "route",
+    "mongoDB"
+  ],
+  "author": "Abdi Muleta",
+  "license": "Integrify",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
