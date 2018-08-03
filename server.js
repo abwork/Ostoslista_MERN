@@ -12,15 +12,15 @@ app.use(bodyParser.json());
 //Database configuration
 const db = require('./config/keys').mongoURI;
 
+const port = process.env.PORT || 8000;
+
 //Connect to Mongo
 mongoose
-    .connect(db) 
+    .connect(db, {useNewUrlParser: true}) 
     .then( () => console.log('MongoDB connection established.'))
     .catch( err => console.log(err))
 
 //Use Routes
 app.use('/api/items', items);
-
-const port = process.env.PORT || 8000;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
