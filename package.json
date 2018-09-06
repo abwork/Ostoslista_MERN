@@ -1,7 +1,7 @@
 {
   "name": "ostoslista_mern",
   "version": "1.0.0",
-  "description": "Shopping list implemented in MERN stack",
+  "description": "Shopping cart implemented on MERN stack",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -22,8 +22,11 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "concurrently": "^3.6.1",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
-    "mongoose": "^5.2.6"
+    "helmet": "^3.13.0",
+    "mongoose": "^5.2.6",
+    "react-modal": "^3.5.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
