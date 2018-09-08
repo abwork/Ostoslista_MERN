@@ -1,17 +1,21 @@
-Online Shopping Cart 
+<h1>Online Shopping Cart </h1>
 
-Installation
+<strong>Installation</strong>
 
-Install dependencies for server: npm install
+Install dependencies for server: <em>yarn</em>
 
-Install dependencies for client: npm run client-install
+Install dependencies for client: <em>yarn client-install</em>
 
-Run the Express server only: npm run server
+<strong>Run</strong>
 
-Run the React client only: npm run client
+Run the Express server only: <em>yarn start server</em>
 
-Run the client & server with concurrently: npm run dev
+Run the React client only: <em>yarn start client</em>
 
-Server runs on http://localhost:5000
+Run the client & server with concurrently: <em>yarn start dev</em>
 
-Client runs on on http://localhost:3000
+<strong>Ports</strong>
+
+Server runs on: http://localhost:8000
+
+Client runs on: http://localhost:3000
