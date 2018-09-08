@@ -1,14 +1,18 @@
 import React from "react";
-import "./Products.css";
+import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import Product from "../Product/Product";
+import "./Products.css";
 
+// actions
+import { addToCart } from "../../store/actions/cart";
 
 const Products = props => {
   const productList = props.products.map( (product, i) => (
     <Product
       key={product._id}
       {...product}
+      addToCart={() => props.addToCart(product, i)}
     />
   ));
   return <div className="Products-Container">
@@ -20,6 +24,15 @@ const Products = props => {
 
 Products.propTypes = {
   products: PropTypes.array.isRequired,
+  addToCart: PropTypes.func.isRequired
 };
 
-export default Products;
+const mapStateToProps = state => ({
+  cart: state.cart
+});
+
+export default connect(
+  mapStateToProps, {
+    addToCart
+  }
+)(Products);

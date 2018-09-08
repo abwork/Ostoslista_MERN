@@ -14,6 +14,7 @@ const Product = props => {
       </div>
       <div className="Product-Data">
         <small className="Product-Price">{props.price}€</small>
+        <button onClick={ props.addToCart } className="product-button Product-Add">Add to Cart</button>
       </div>
     </div>
     </div>
@@ -24,6 +25,7 @@ Product.propTypes = {
   name: PropTypes.string.isRequired,
   photo: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
+  addToCart: PropTypes.func.isRequired
 };
 
 export default Product;

@@ -24,6 +24,7 @@ class Home extends Component {
 
 const mapStateToProps = state => ({
   products: state.products,
+  cart: state.cart
 });
 
 export default connect(mapStateToProps, {fetchProducts})(Home);
