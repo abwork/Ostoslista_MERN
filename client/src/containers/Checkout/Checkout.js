@@ -1,6 +1,7 @@
-import React, { Component } from "react";
-import Modal from "react-modal";
-import "./Checkout.css";
+import React, { Component } from 'react';
+import Modal from 'react-modal';
+import Buy from '../../components/Buy/Buy';
+import './Checkout.css';
 
 import { connect } from 'react-redux';
 
@@ -40,7 +41,7 @@ class Checkout extends Component {
   render() {
 
     if (!this.props.cart.length)
-      return <p>"Cart is empty to checkout!</p>
+      return <Buy message={"Cart is empty to checkout!"} />
 
     return (
       <div className="Checkout-Wrapper">
