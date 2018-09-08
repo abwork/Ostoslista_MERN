@@ -1,0 +1,7 @@
+.NavBar-Wrapper {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    font-size: 14px;
+}
