@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const products = require('./routes/api/products');
-const items = require('./routes/api/items');
 
 // allow promises
 mongoose.Promise = global.Promise;
@@ -31,7 +30,6 @@ mongoose
 
 // routes
 app.use('/api/products', products);
-app.use('/api/items', items);
 
 // production
 if (process.env.NODE_ENV === 'production') {
@@ -43,6 +41,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 };
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server running on port ${ PORT }`));

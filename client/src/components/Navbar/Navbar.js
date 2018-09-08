@@ -15,7 +15,7 @@ const NavBar = props => (
   <nav className="NavBar-Wrapper">
     <div>
       <Link to="/">
-       <p>Online Shoping Cart</p>
+       <p>Online Dress Shop</p>
       </Link> 
     </div>
     <Link to="/cart">
@@ -33,3 +33,4 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, null)(NavBar);
+
