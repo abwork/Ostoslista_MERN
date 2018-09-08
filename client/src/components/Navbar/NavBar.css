@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     padding: 1.5rem;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .Cart-Info {
@@ -18,7 +18,7 @@
     text-align: center;
     color: #fff;
     background-color: #a864a8;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 14px;
     top: -5px;
     left: 13px;
