@@ -85,7 +85,7 @@ class Checkout extends Component {
         >
           <i className="fa fa-times Close-Modal" onClick={this.closeModal}></i>
           <p style={{ color: "#000", padding: '20px' }}>
-            Thanks <strong>{this.state.name}</strong> for visiting my first Online Shopping Cart!
+            Thanks <strong>{this.state.name}</strong> for shopping!
           </p>
         </Modal>
       </div>
