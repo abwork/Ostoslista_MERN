@@ -61,7 +61,7 @@ class Cart extends Component {
                 <td />
                 <td />
                 <td>
-                  <p className="Total-Price">${totalPrice(this.props.cart)}</p>
+                  <p className="Total-Price">{totalPrice(this.props.cart)}€</p>
                   <Link to="/checkout" className="Checkout-Button-Text">
                     <div className="Checkout-Button">Checkout</div>
                   </Link>
