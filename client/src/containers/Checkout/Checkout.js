@@ -55,7 +55,6 @@ class Checkout extends Component {
   };
 
   render() {
-    const errors = this.validate(name, email, country)
 
     if (!this.props.cart.length)
       return <Buy message={"Cart is empty to checkout!"} />
