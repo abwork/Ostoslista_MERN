@@ -17,7 +17,6 @@ const customStyles = {
   }
 };
 
-
 class Checkout extends Component {
   state = {
     name: "",
@@ -25,21 +24,6 @@ class Checkout extends Component {
     country: "",
     modalIsOpen: false
   };
-
-  validate = (name, email, country) => {
-    const errors = {
-      name: /^[a-zA-Z ,.'-]{3,30}$/.test(name)
-        ? ""
-        : "only alphabetic characters",
-      email: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email)
-        ? ""
-        : "invalid email address",
-      country: /^[a-zA-Z ,.'-]{3,30}$/.test(country)
-        ? ""
-        : "only alphabetic characters",
-    }
-    return errors;
-  }
 
   onChangeHandler = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -55,7 +39,7 @@ class Checkout extends Component {
   };
 
   render() {
-
+    
     if (!this.props.cart.length)
       return <Buy message={"Cart is empty to checkout!"} />
 
