@@ -2,8 +2,7 @@
     "extends": ["airbnb", "prettier/react"],
     "plugins": ["prettier", "react"],
     "env": {
-      "browser": true,
-      "jest": true
+      "browser": true
     },
     "rules": {
       "linebreak-style": "off",
@@ -16,14 +15,6 @@
       "no-console": 1,
       "no-unexpected-multiline": "warn",
       "no-underscore-dangle": ["error", { "allow": ["_id"] }],
-      "jsx-a11y/anchor-is-valid": [
-        1,
-        {
-          "components": ["Link"],
-          "specialLink": ["to"],
-          "aspects": ["noHref", "invalidHref", "preferButton"]
-        }
-      ],
       "react/jsx-closing-bracket-location": [2, "after-props"]
     },
     "parser": "babel-eslint",
